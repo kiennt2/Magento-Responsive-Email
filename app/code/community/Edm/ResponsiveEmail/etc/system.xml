@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <system>
+            <groups>
+                <mail_style translate="label">
+                    <label>Email Responsive - Settings</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <expanded>1</expanded>
+                    <fields>
+                        <edmconfig_active translate="label">
+                            <label>Enable / Disable</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>0 = Disable / 1 = Enable</comment>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_active>
+                        <inline_css translate="label">
+                            <label>Inline CSS Files</label>
+                            <comment>
+                                Comma-separated list of CSS files that will get converted
+                                into inline styles for transactional emails.  File path
+                                is relative to skin/area/packageName/template/css/responsive_email.
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </inline_css>
+                        <external_css_not_inline translate="label">
+                            <label>External CSS Files</label>
+                            <comment>
+                                Comma-separated list of CSS files that will get pulled
+                                into a style tag.  Things like media queries can't be
+                                converted to inline CSS.
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </external_css_not_inline>
+                        <edmconfig_area translate="label">
+                            <label>Area</label>
+                            <comment>frontend, backend ...</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_area>
+                        <edmconfig_package translate="label">
+                            <label>Package Name</label>
+                            <comment>enterprise, default ...</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_package>
+                        <edmconfig_theme translate="label">
+                            <label>Templates</label>
+                            <comment>default, my-theme ...</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>400</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_theme>
+                        <edmconfig_viewport_width translate="label">
+                            <label>Viewport Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>501</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_viewport_width>
+                        <edmconfig_viewport_initial translate="label">
+                            <label>Initial Scale</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>502</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_viewport_initial>
+                        <edmconfig_viewport_min translate="label">
+                            <label>Minimum Scale</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>503</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_viewport_min>
+                        <edmconfig_viewport_max translate="label">
+                            <label>Maximum Scale</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>504</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_viewport_max>
+                        <edmconfig_viewport_scalable translate="label">
+                            <label>User Scalable</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>505</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_viewport_scalable>
+                        <edmconfig_path translate="label">
+                            <label>Global Variables</label>
+                            <comment>{{var edm_path}} &lt;=&gt; http://domain/skin/area/packageName/template/</comment>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>600</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_path>
+                        <edmconfig_images translate="label">
+                            <label>Global Variables</label>
+                            <comment>{{var edm_image}} &lt;=&gt; http://domain/skin/area/packageName/template/images/responsive_email/</comment>
+                            <frontend_type>label</frontend_type>
+                            <sort_order>600</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_images>
+                    </fields>
+                </mail_style>
+            </groups>
+        </system>
+    </sections>
+</config>

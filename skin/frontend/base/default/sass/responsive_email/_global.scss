@@ -1,0 +1,88 @@
+body,
+.email-container { background-color: $background-color; padding: 0; margin: 0; font: $body-font; color: $body-font-color; }
+
+.email-container { width: 670px; margin: 36px auto; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -moz-text-size-adjust: none; text-size-adjust: none; }
+
+img { border: none; max-width: 100%; height: auto; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-family: $font-bold; text-transform: uppercase; color: #404040; }
+
+p { margin: 0 0 15px 0; padding: 0; }
+
+a { color: #666; text-decoration: none;
+    &.hyperlink { color: #404040; text-decoration: underline; }
+    &.arrow-link { text-transform: uppercase; font: bold 12px/20px $font-bold; color: #000;
+        img { margin-left: 12px; }
+    }
+    &.button {
+        font: normal 16px/40px $font-regular; text-transform: uppercase; color: #fff; background: #999; padding: 0 18px; margin: 0; display: inline-block;
+    }
+}
+
+b, strong { color: #404040; }
+
+.image-wrapper img { width: 100%; height: 100%; border: none; }
+
+.clearfix { clear: both; }
+
+div.logo { display: block; text-align: center; margin: 0 0 25px 0;
+    a { display: inline-block; margin: 0; padding: 0; }
+    img { width: 200px; height: auto; }
+}
+
+table { border: none; border-spacing: 0; border-collapse: collapse; width: 100%; margin: 0; padding: 0;
+    thead,
+    tbody { background-color: transparent; }
+    thead {
+        tr {
+            th { font: normal 14px/24px $font-bold; padding: 6px 0; text-align: center; color: #404040; text-transform: uppercase; border: none; border-top: 1px solid #999; border-bottom: 1px solid #999; vertical-align: top; }
+        }
+    }
+    tr {
+        td { border: none; vertical-align: top; margin: 0; padding: 0;
+            &.footer { padding: 20px 0; border-top: 1px solid #dfdfdf; font-size: 12px; line-height: 18px; color: #999; text-align: center; }
+        }
+    }
+}
+
+.navigation { display: block; margin: 0; padding: 0 0 13px 0; text-align: center;
+    ul, ol { list-style: none; display: block; margin: 0; padding: 0; font: normal 12px/20px $font-regular; }
+    li { display: inline-block; vertical-align: top; }
+    a { color: #404040; text-transform: uppercase; }
+    tr > td { text-align: center; }
+    li.first,
+    tr > td.first { text-align: left; }
+    li.last,
+    tr > td.last { text-align: right; }
+}
+
+.top-banner { display: block; text-align: center; border-top: 1px solid #999; margin: 0 0 26px 0;
+    img { display: block; height: auto; width: auto; margin: 0 auto; }
+}
+
+.col2-set {
+    .col-1 { width: 49%; float: left; margin: 0 0 30px 0; }
+    .col-2 { width: 49%; float: right; margin: 0 0 30px 0; }
+}
+
+h3.block-title { font: normal 14px/20px $font-regular; color: #404040; padding: 15px 0; }
+
+.description p,
+.oder-description p { margin: 0 0 25px 0; }
+
+.email-footer-links {
+    tr > td { width: 25%; text-align: left; }
+    h3 { font: normal 12px/18px $font-regular; color: #000; margin: 0 0 15px 0; }
+    p { line-height: 18px; margin: 0 0 10px 0; }
+    a { color: #999; font-size: 12px; }
+    img { float: left; width: 35px; height: 35px; margin: 0 8px 10px 0; }
+    .follow { display: block; margin: 0 -10px 10px 0; }
+}
+
+.footer {
+    a { color: #999 !important; text-decoration: none !important; }
+}
+
+.sidebar-banner { text-align: center; display: block; margin: 0; padding: 0;
+    img { display: block; margin: 0 auto; }
+}

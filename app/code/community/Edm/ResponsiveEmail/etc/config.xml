@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Edm_ResponsiveEmail>
+            <version>0.1.0</version>
+        </Edm_ResponsiveEmail>
+    </modules>
+    <global>
+        <models>
+            <responsive_email>
+                <class>Edm_ResponsiveEmail_Model</class>
+            </responsive_email>
+            <core>
+                <rewrite>
+                    <email_template>Edm_ResponsiveEmail_Model_Email_Template</email_template>
+                </rewrite>
+            </core>
+        </models>
+
+        <helpers>
+            <responsive_email>
+                <class>Edm_ResponsiveEmail_Helper</class>
+            </responsive_email>
+        </helpers>
+
+        <blocks>
+            <responsive_email>
+                <class>Edm_ResponsiveEmail_Block</class>
+            </responsive_email>
+        </blocks>
+    </global>
+
+    <default>
+        <system>
+            <mail_style>
+                <edmconfig_active>0</edmconfig_active>
+                <inline_css>inline.css</inline_css>
+                <external_css_not_inline>media-queries.css</external_css_not_inline>
+                <edmconfig_area>frontend</edmconfig_area>
+                <edmconfig_package>base</edmconfig_package>
+                <edmconfig_theme>default</edmconfig_theme>
+                <edmconfig_viewport_width>device-width</edmconfig_viewport_width>
+                <edmconfig_viewport_initial>1</edmconfig_viewport_initial>
+                <edmconfig_viewport_min>1</edmconfig_viewport_min>
+                <edmconfig_viewport_max>1</edmconfig_viewport_max>
+                <edmconfig_viewport_scalable>no</edmconfig_viewport_scalable>
+            </mail_style>
+        </system>
+    </default>
+</config>

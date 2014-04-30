@@ -1,0 +1,178 @@
+@import "styles";
+
+@-webkit-viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 1.0;
+    max-zoom: 1.0;
+    user-zoom: fixed;
+    max-width: auto;
+    min-width: auto;
+    orientation: auto;
+}
+@-moz-viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 1.0;
+    max-zoom: 1.0;
+    user-zoom: fixed;
+    max-width: auto;
+    min-width: auto;
+    orientation: auto;
+}
+@-ms-viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 1.0;
+    max-zoom: 1.0;
+    user-zoom: fixed;
+    max-width: auto;
+    min-width: auto;
+    orientation: auto;
+}
+
+@-o-viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 1.0;
+    max-zoom: 1.0;
+    user-zoom: fixed;
+    max-width: auto;
+    min-width: auto;
+    orientation: auto;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 1.0;
+    max-zoom: 1.0;
+    user-zoom: fixed;
+    max-width: auto;
+    min-width: auto;
+    orientation: auto;
+}
+
+$mobile-width: 480px;
+
+@media only screen and (max-device-width: $mobile-width) {
+
+    .email-container {
+        width: 100% !important;
+        margin: 20px auto !important;;
+        > table > tbody > tr > td { padding: 0 12px !important; width: 100% !important; float: left !important; display: block !important;
+            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+    }
+    .navigation { display: none !important; }
+
+    .top-banner { display: block; text-align: center; border: none !important;
+        a { display: block; height: 100px;
+            background: url("#{unquote($images-path)}new-order-2.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+        img { display: none !important; }
+    }
+
+    .col2-set { border: none !important;
+        .col-1,
+        .col-2 { width: 100% !important; float: left !important; }
+    }
+
+    .order-container .col2-set {
+        .col-1,
+        .col-2 { border-top: 1px solid #999 !important; }
+    }
+
+    h3.block-title { font: normal 14px/20px $font-regular !important; }
+
+    .email-footer-links {
+        tr > td { width: 100% !important; text-align: center !important; padding: 30px 0 20px 0 !important; border-top: 1px solid #dfdfdf !important; }
+        h3 { display: none; }
+        p { display: inline-block !important; vertical-align: top; padding: 0 12px !important; margin: 0 -3px 10px 0 !important; border-right: 1px solid #a9a9a9; line-height: 12px !important; }
+        p:last-child { border: none; }
+    }
+
+    .hide-on-mobile,
+    tr > td.hide-on-mobile { display: none !important; visibility: hidden !important }
+
+    table tr td.footer { padding: 0 !important; border: none !important; text-align: center !important; }
+
+    .sidebar-banner img { max-width: 296px !important }
+
+    //ORDER ========================================================================================
+
+    table.order-totals {
+        table tr td { text-align: left !important; }
+    }
+
+    //ACCOUNT ========================================================================================
+
+    .top-banner.wishlist-banner {
+        a {
+            background: url("#{unquote($images-path)}wishlist-banner-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.subscription_banner {
+        a {
+            background: url("#{unquote($images-path)}subscription_banner-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.tracking-banner {
+        a {
+            background: url("#{unquote($images-path)}tracking-banner-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.refund-banner {
+        a {
+            background: url("#{unquote($images-path)}refund-banner-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.new-account-banner {
+        a {
+            background: url("#{unquote($images-path)}new-account-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.new-account-vip-banner {
+        a {
+            background: url("#{unquote($images-path)}new-account-vip-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .top-banner.reset-password-banner {
+        a {
+            background: url("#{unquote($images-path)}reset-password-regular-banner-mobile.jpg") no-repeat center;
+            -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover;
+        }
+    }
+
+    .subscription-img-left,
+    .subscription-img-right { text-align: center !important;
+        img { max-width: 296px !important }
+    }
+
+    .vip-membership span { padding: 0 0 0 55px !important; }
+
+    .wishlist-content {
+        padding: 10px 10px 30px 10px !important; margin: 0 0 20px 0 !important;
+    }
+
+    .wishlist-item {
+        table table { width: 50% !important; }
+        .product-image {
+            img { max-width: 165px !important; }
+        }
+    }
+
+}

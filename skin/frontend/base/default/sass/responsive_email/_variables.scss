@@ -1,0 +1,27 @@
+$body-font: normal 14px/22px Helvetica Neue,Helvetica,Arial,sans-serif;
+$body-font-color: #666;
+$background-color: #fff;
+$highlight-color: #F47526;
+$highlight-contrast-color: white;
+
+$font-path: "fontspathdonotremove"; //Don't remove & change
+$images-path: "imagespathdonotremove"; //Don't remove & change
+
+$font-regular : "centurygothic-webfont",Helvetica Neue,Helvetica,Arial,sans-serif;
+$font-bold : "centurygothicbold-webfont",Helvetica Neue,Helvetica,Arial,sans-serif;
+
+@each $font-face in
+    centurygothic-webfont ,
+    centurygothicbold-webfont {
+    @font-face {
+        font-family: quote($font-face);
+        src:  url('#{unquote($font-path)}#{$font-face}.eot');
+        src:  url('#{unquote($font-path)}#{$font-face}.eot?#iefix')         format('embedded-opentype'),
+        url('#{unquote($font-path)}#{$font-face}.woff')               format('woff'),
+        url('#{unquote($font-path)}#{$font-face}.ttf')                format('truetype'),
+        url('#{unquote($font-path)}#{$font-face}.svg##{$font-face}')   format('svg');
+        font-weight: normal;
+        font-style:  normal;
+        font-stretch: normal;
+    }
+}
