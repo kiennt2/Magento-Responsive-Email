@@ -4,6 +4,18 @@
 
 This module automatically converts an external set of stylesheets to inline CSS for transactional email templates, to make it easier to write and maintain them.
 
+#### Features
+
+*   Module enable/disable
+*   Directory config
+*   Add viewport & config
+*   Add new variable
+    > {{var edm_image}} - get image path
+    > {{var edm_path}} - get base url
+*   Automatic convert CSS to inline
+*   Automatic insert CSS to Template Styles field
+*   Automatic insert font path & background image path
+
 #### Customization
 
 You can add your own stylesheet to add some customization on top of our base CSS by going into *System* > *Configuration* > *System* > *Email Responsive - Settings*.
