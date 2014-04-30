@@ -33,3 +33,8 @@ Customize your email in *System* > *Transactional Emails*
 #### Output - Demo
 
 ![alt tag](https://raw.githubusercontent.com/kiennt2/Magento-Responsive-Email/master/guide/04.output.png)
+
+#### Bonus
+
+The Ultimate Guide to Email Style
+http://www.campaignmonitor.com/resources/will-it-work/
