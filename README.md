@@ -9,9 +9,7 @@ This module automatically converts an external set of stylesheets to inline CSS 
 *   Module enable/disable
 *   Directory config
 *   Add viewport & config
-*   Add new variable
-    > {{var edm_image}} - get image path
-    > {{var edm_path}} - get base url
+*   Add new variable `{{var edm_image}}` - get image path - `{{var edm_path}}` - get base url
 *   Automatic convert CSS to inline
 *   Automatic insert CSS to Template Styles field
 *   Automatic insert font path & background image path
