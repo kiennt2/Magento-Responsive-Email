@@ -12,6 +12,7 @@ class Edm_ResponsiveEmail_Model_Email_Template extends Edm_ResponsiveEmail_Model
             $edm_package = Mage::getStoreConfig('system/mail_style/edmconfig_package');
             $edm_theme = Mage::getStoreConfig('system/mail_style/edmconfig_theme');
             $edm_area = Mage::getStoreConfig('system/mail_style/edmconfig_area');
+            $edm_charset = Mage::getStoreConfig('system/mail_style/edmconfig_charset');
             $edm_viewport_width = Mage::getStoreConfig('system/mail_style/edmconfig_viewport_width');
             $edm_viewport_init = Mage::getStoreConfig('system/mail_style/edmconfig_viewport_initial');
             $edm_viewport_min = Mage::getStoreConfig('system/mail_style/edmconfig_viewport_min');
@@ -37,6 +38,7 @@ class Edm_ResponsiveEmail_Model_Email_Template extends Edm_ResponsiveEmail_Model
             $styleIncludePath = str_replace($replacePath, $mediaPath, $cssReplace);
 
             $styleExt = "<meta name='viewport' content='width=".$edm_viewport_width.", initial-scale=".$edm_viewport_init.", minimum-scale=".$edm_viewport_min.", maximum-scale=".$edm_viewport_max.", user-scalable=".$edm_user_scalable."'/>";
+            $styleExt .= "<meta http-equiv='Content-Type' content='text/html; charset=".$edm_charset."' />";
             $styleExt .= "<style type=\"text/css\">\n%s\n</style>\n%s";
             $styleExtInclude = sprintf($styleExt, $styleIncludePath, $html);
 

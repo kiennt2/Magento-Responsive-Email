@@ -73,6 +73,14 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </edmconfig_theme>
+                        <edmconfig_charset translate="label">
+                            <label>Html Encoding</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>450</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </edmconfig_charset>
                         <edmconfig_viewport_width translate="label">
                             <label>Viewport Width</label>
                             <frontend_type>text</frontend_type>

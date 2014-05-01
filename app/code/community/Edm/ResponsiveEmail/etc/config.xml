@@ -39,6 +39,7 @@
                 <edmconfig_area>frontend</edmconfig_area>
                 <edmconfig_package>base</edmconfig_package>
                 <edmconfig_theme>default</edmconfig_theme>
+                <edmconfig_charset>utf-8</edmconfig_charset>
                 <edmconfig_viewport_width>device-width</edmconfig_viewport_width>
                 <edmconfig_viewport_initial>1</edmconfig_viewport_initial>
                 <edmconfig_viewport_min>1</edmconfig_viewport_min>

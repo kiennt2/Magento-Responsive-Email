@@ -8,6 +8,7 @@ This module automatically converts an external set of stylesheets to inline CSS 
 
 *   Module enable/disable
 *   Directory config
+*   HTML Encoding config
 *   Add viewport & config
 *   Add new variable `{{var edm_image}}` - get image path - `{{var edm_path}}` - get base url
 *   Automatic convert CSS to inline
@@ -29,6 +30,19 @@ You can add your own stylesheet to add some customization on top of our base CSS
 Customize your email in *System* > *Transactional Emails*
 
 ![alt tag](https://raw.githubusercontent.com/kiennt2/Magento-Responsive-Email/master/guide/03.create-new-email.png)
+
+#### Supported CSS selectors
+
+*   `E F`
+*   `E > F`
+*   `E + F`
+*   `E:first-child`
+*   `E[foo]`
+*   `E[foo="value"]`
+*   `E.className` <=> `E[class~="className"]`
+*   `.className` <=> `*[class~="className"]`
+*   `E#myid`
+*   `#myid`
 
 #### Output - Demo
 
